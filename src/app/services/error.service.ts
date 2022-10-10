@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import {throwError as observableThrowError} from 'rxjs';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+    })
 export class ErrorService {
     constructor() {
     }

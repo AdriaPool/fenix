@@ -10,7 +10,9 @@ import { ErrorService } from './error.service';
 import { Observable } from 'rxjs';
 import { AzureVm } from '../models/azurevm';
 import { forkJoin } from 'rxjs';
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class VMService {
 
   constructor(public http: HttpClient, public errorService: ErrorService, @Inject('BASE_URL') private baseUrl: string) {

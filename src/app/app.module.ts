@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialExampleModule} from '../app/material.module';
 import {CreateVmComponent} from '../app/dialogs/create-vm.component';
 import { CustomerService } from './services/customer.service';
+import { ErrorService } from './services/error.service';
 
 
 
@@ -51,9 +52,9 @@ import { CustomerService } from './services/customer.service';
 providers: [
    { provide: 'BASE_URL', useFactory: getBaseUrl },
    VMService,
-   CustomerService,
+   CustomerService
     ],
-  bootstrap: [AppComponent,AwsComponent],
+  bootstrap: [AppComponent],
   entryComponents: [CreateVmComponent]
 })
 export class AppModule { }
