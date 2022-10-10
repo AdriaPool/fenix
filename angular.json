@@ -134,5 +134,8 @@
       }
     }
   },
-  "defaultProject": "Phoenix"
+  "defaultProject": "Phoenix",
+  "cli": {
+    "analytics": false
+  }
 }
